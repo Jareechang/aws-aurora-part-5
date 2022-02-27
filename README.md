@@ -1,8 +1,8 @@
-# AWS Technical series (Integrating PostgreSQL with Next.js)
+# AWS Technical series (Integrate with AWS ECS)
 
-Part 3 of the [AWS Aurora Technical Series](https://www.jerrychang.ca/writing/aws-aurora-technical-series).
+Part 5 of the [AWS Aurora Technical Series](https://www.jerrychang.ca/writing/aws-aurora-technical-series).
 
-To see the module, please visit [AWS Aurora Technical Series Part IV - PostgreSQL integration with Next.js](https://www.jerrychang.ca/writing/aws-aurora-technical-series-postgresql-integration-nextjs)
+To see the module, please visit [AWS Aurora Technical Series Part IV - Integrate with AWS ECS](https://www.jerrychang.ca/writing/aws-aurora-technical-series-integrate-with-aws-ecs)
 
 ## Getting started
 
@@ -35,4 +35,17 @@ DB_PORT=5438
 
 ```sh
 yarn dev
+```
+
+## Infrastructure
+
+```sh
+export AWS_ACCESS_KEY_ID=<your-key>
+export AWS_SECRET_ACCESS_KEY=<your-secret>
+export AWS_DEFAULT_REGION=us-east-1
+export TF_VAR_ip_address=<your-ip-address>
+
+terraform init
+terraform plan
+terraform apply -auto-approve
 ```
